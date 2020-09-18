@@ -5,4 +5,4 @@ Resources:
 - https://github.com/literalnoodles/twitter_api/blob/d6dfcf3489d7152c394e230eb583ac85df933ae3/twitter_v1.py
 - https://www.postman.com/
 - https://developer.twitter.com/en/docs/tutorials/postman-getting-started
-- 
+- https://github.com/rrrrhys/public_currents/blob/23ba8076440c203800e649c753b4e29c2abbf0b0/twitter_mine.py
