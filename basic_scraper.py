@@ -43,7 +43,7 @@ def twitter_data(search_term, since, until):
         'include_ext_media_availability':'true',
         'send_error_codes':'true',
         'simple_quoted_tweet':'true',
-        'q': str(search_term) + "since:" + str(since) + " until:" + str(until),
+        'q': str(search_term) + " since:" + str(since) + " until:" + str(until),
         'count':'50',
         'query_source':'typed_query',
         'pc': 1,
@@ -63,8 +63,7 @@ def twitter_data(search_term, since, until):
 
     tw_count = len(json_data['globalObjects']['tweets'])
 
-    print(tw_count)
+    print(str(tw_count) + " tweets collected.")
 
 
-while True:
-    twitter_data("$fb", '2015-01-01', '2015-01-06')
+twitter_data("$fb", '2015-01-01', '2015-01-06')
