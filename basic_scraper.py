@@ -14,11 +14,6 @@ def dump_json(obj):
 
 def get_twitter_gt():
     headers = {
-
-        # Token 1
-        #'Authorization': 'Bearer AAAAAAAAAAAAAAAAAAAAANk3DgEAAAAAB0pZx4xjgXBOoalj%2FRbagurxD2M%3DG8634UVlBud8LrLG4nGo7FpN2RCO2xul5BuPKHuejUAV14O0KG',
-
-        # Token 2
         'Authorization': 'Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA',
     }
 
