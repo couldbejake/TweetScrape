@@ -6,3 +6,4 @@ Resources:
 - https://www.postman.com/
 - https://developer.twitter.com/en/docs/tutorials/postman-getting-started
 - https://github.com/rrrrhys/public_currents/blob/23ba8076440c203800e649c753b4e29c2abbf0b0/twitter_mine.py
+- https://github.com/tieanminer/you-get/blob/bd06317fcc947d2705adaae4ee5e2a21acececc4/src/you_get/extractors/twitter.py
