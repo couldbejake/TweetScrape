@@ -3,9 +3,8 @@ import time
 import json
 import requests
 import random
-import pickle
 import subprocess
-
+import time
 
 def dump_json(obj):
     with open('data.json', 'w') as outfile:
@@ -64,14 +63,23 @@ def twitter_data(search_term, since, until):
 
     json_data = res.json()
 
-    tw_count = len(json_data['globalObjects']['tweets'])
+    tweets = json_data['globalObjects']['tweets']
 
-    print(str(tw_count) + " tweets collected.")
+    tweets_out = []
+    
+    for tweet_id in tweets:
+        full_text = json_data['globalObjects']['tweets'][tweet_id]['full_text']
+        safe_text = full_text.encode("ascii", errors="ignore").decode()
+        tweets_out.append(safe_text)
 
+    return tweets_out
 
-twitter_data("$fb", '2015-01-01', '2015-01-06')
+tweets = twitter_data("$fb", '2015-01-01', '2015-01-06')
 
+print(str(len(tweets)) + " tweets collected!")
 
+for tweet in tweets:
+    print(tweet + '\n')
 
 
 
